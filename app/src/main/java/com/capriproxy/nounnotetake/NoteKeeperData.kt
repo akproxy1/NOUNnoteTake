@@ -1,6 +1,7 @@
 package com.capriproxy.nounnotetake
 
 class CourseInfo(val courseId: String, val title: String) {
+
     override fun toString(): String {
         return "$courseId-$title"
     }

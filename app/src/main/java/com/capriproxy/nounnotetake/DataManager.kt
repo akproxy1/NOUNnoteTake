@@ -20,6 +20,9 @@ class DataManager {
 
         course = CourseInfo("CHM101", "Introduction to Chemistry")
         courses.set(course.courseId, course)
+
+        course = CourseInfo("BIO101", "Introduction to Biology")
+        courses.set(course.courseId, course)
     }
 
 }
