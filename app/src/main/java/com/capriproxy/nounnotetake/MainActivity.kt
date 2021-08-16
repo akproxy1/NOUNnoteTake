@@ -10,7 +10,6 @@ import com.capriproxy.nounnotetake.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,9 +21,8 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
 
 
-        val dm = DataManager()
         val adapterCourses = ArrayAdapter<CourseInfo>(this,android.R.layout.simple_spinner_item,
-        dm.courses.values.toList())
+        DataManager.courses.values.toList())
         adapterCourses.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
         binding.content.spinnerCourses.adapter = adapterCourses
