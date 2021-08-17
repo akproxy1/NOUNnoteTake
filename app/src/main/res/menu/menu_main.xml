@@ -4,7 +4,17 @@
     tools:context="com.capriproxy.nounnotetake.MainActivity">
     <item
         android:id="@+id/action_settings"
-        android:orderInCategory="100"
+        android:orderInCategory="102"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_next"
+        android:orderInCategory="100"
+        android:title="Next"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_prvious"
+        android:orderInCategory="101"
+        android:title="Previous" />
 </menu>
